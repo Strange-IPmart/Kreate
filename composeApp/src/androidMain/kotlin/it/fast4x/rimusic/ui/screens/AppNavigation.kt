@@ -58,7 +58,6 @@ import it.fast4x.rimusic.ui.screens.localplaylist.LocalPlaylistScreen
 import it.fast4x.rimusic.ui.screens.mood.MoodScreen
 import it.fast4x.rimusic.ui.screens.mood.MoodsPageScreen
 import it.fast4x.rimusic.ui.screens.newreleases.NewreleasesScreen
-import it.fast4x.rimusic.ui.screens.player.Player
 import it.fast4x.rimusic.ui.screens.player.Queue
 import it.fast4x.rimusic.ui.screens.playlist.PlaylistScreen
 import it.fast4x.rimusic.ui.screens.podcast.PodcastScreen
@@ -187,15 +186,6 @@ fun AppNavigation(
             }
         }
 
-        composable(route = NavRoutes.player.name) {
-            modalBottomSheetPage {
-                Player(
-                    navController = navController,
-                    onDismiss = {}
-                )
-            }
-        }
-
         composable(
             route = "${NavRoutes.artist.name}/{id}",
             arguments = listOf(
@@ -231,19 +221,29 @@ fun AppNavigation(
         }
 
         composable(
-            route = "${NavRoutes.playlist.name}/{id}",
+            route = "${NavRoutes.playlist.name}/{id}?params={params}",
             arguments = listOf(
                 navArgument(
                     name = "id",
-                    builder = { type = NavType.StringType }
+                    builder = {
+                        type = NavType.StringType
+                    }
+                ),
+                navArgument(
+                    name = "params",
+                    builder = {
+                        type = NavType.StringType
+                        defaultValue = ""
+                    }
                 )
             )
         ) { navBackStackEntry ->
             val id = navBackStackEntry.arguments?.getString("id") ?: ""
+            val params = navBackStackEntry.arguments?.getString( "params" )
             PlaylistScreen(
                 navController = navController,
                 browseId = id,
-                params = null,
+                params = params,
                 miniPlayer = miniPlayer,
             )
         }
