@@ -1,25 +1,15 @@
 <div align="center">
   <img alt="project's banner" src="./assets/design/app_banner.png" width="250px" />    
   <p>
-    <b>Kreate</b> is a <a href="https://github.com/fast4x/RiMusic">RiMusic</a> folk with performance in mind
+    <b>Kreate</b> is a <a href="https://github.com/fast4x/RiMusic">RiMusic</a> fork with performance in mind
   </p>
     
   <br>
 
-  <a title="Crowdin" target="_blank" href="https://translate.kreate.knighthat.me/project/kreate"><img src="https://badges.crowdin.net/kreate/localized.svg"></a>
+  [![Latest version download count](https://api.knighthat.me/kreate/downloads/latest)](https://github.com/knighthat/kreate/releases/latest)
+  [![Localization progress](https://badges.crowdin.net/kreate/localized.svg)](https://translate.kreate.knighthat.me/project/kreate)
+  ![Total download count](https://api.knighthat.me/kreate/downloads/total)
 </div>
-
-
-# ❗ IMPORTANT
-
-> Updated March 14 2025
-
-The app is now officially released under new ID. Therefore, fresh installation is required.
-
-Fortunately, @knighthat has introduced migration system to help you transfer data from old Kreate
-to new app effortlessly.
-
-For more details, check out [this article](https://kreate.knighthat.me/usr/how-to-migrate).
 
 
 # 📲 Installation
@@ -29,7 +19,7 @@ For more details, check out [this article](https://kreate.knighthat.me/usr/how-t
 [![Get it on F-Droid](./assets/get-it-on/F-Droid.png)](https://f-droid.org/packages/me.knighthat.kreate)
 [![Get it on OpenApk](./assets/get-it-on/OpenAPK.png)](https://www.openapk.net/kreate/me.knighthat.kreate/)
 [![Get it on AndroidFreeware](./assets/get-it-on/AndroidFreeware.png)](https://www.androidfreeware.net/download-kreate-apk.html)
-
+[![Get it on IzzyOnDroid](./assets/get-it-on/IzzyOnDroid.png)](https://apt.izzysoft.de/fdroid/index/apk/me.knighthat.kreate)
 
 
 # ✨ Features
@@ -161,6 +151,7 @@ Submit your designs by [opening a ticket](https://github.com/knighthat/Kreate/is
 - [**KuGou**](https://www.kugou.com): Lyrics provider
 - [**LrcLib**](https://lrclib.net): Lyrics provider
 - [**HypnoticCanvas**](https://mikepenz.github.io/HypnoticCanvas/): A shader modifier for Compose Multiplatform / Jetpack Compose
+- [**MedieroAF**](https://github.com/MedieroAF): App logo
 
 
 # ⚠️ Disclaimer
